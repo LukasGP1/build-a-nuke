@@ -1,6 +1,7 @@
 package de.lulkas_.buildanuke.item;
 
 import de.lulkas_.buildanuke.BuildANuke;
+import de.lulkas_.buildanuke.block.ModBlocks;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -9,6 +10,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.Block;
 
 public class ModCreativeModeTabs {
     public static final CreativeModeTab BUILD_A_NUKE_TAB = Registry.register(
@@ -19,6 +21,8 @@ public class ModCreativeModeTabs {
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.URANIUM);
                         output.accept(ModItems.URANIUM_NUGGET);
+
+                        for(Block block : ModBlocks.blocksForCreativeModeTab) output.accept(block);
                     })
                     .build()
     );

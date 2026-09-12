@@ -1,5 +1,6 @@
 package de.lulkas_.buildanuke;
 
+import de.lulkas_.buildanuke.block.ModBlocks;
 import de.lulkas_.buildanuke.item.ModCreativeModeTabs;
 import de.lulkas_.buildanuke.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -17,6 +18,7 @@ public class BuildANuke implements ModInitializer {
 	public void onInitialize() {
 		ModCreativeModeTabs.register();
 		ModItems.register();
+		ModBlocks.register();
 	}
 
 	public static Identifier id(String path) {

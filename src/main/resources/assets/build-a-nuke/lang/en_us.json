@@ -2,5 +2,11 @@
   "item.build-a-nuke.uranium": "Uranium",
   "item.build-a-nuke.uranium_nugget": "Uranium Nugget",
 
+  "block.build-a-nuke.uranium_rich_stone": "Uranium Rich Stone",
+  "block.build-a-nuke.uranium_rich_deepslate": "Uranium Rich Deepslate",
+  "block.build-a-nuke.uranium_rich_granite": "Uranium Rich Granite",
+  "block.build-a-nuke.uranium_rich_andesite": "Uranium Rich Andesite",
+  "block.build-a-nuke.uranium_rich_diorite": "Uranium Rich Diorite",
+
   "creativemodetab.build-a-nuke.build_a_nuke_items": "Build a Nuke Items"
 }
