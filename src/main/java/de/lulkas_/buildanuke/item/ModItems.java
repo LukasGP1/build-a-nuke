@@ -13,6 +13,7 @@ import java.util.function.Function;
 
 public class ModItems {
     public static final Item URANIUM = registerItem("uranium", Item::new);
+    public static final Item URANIUM_NUGGET = registerItem("uranium_nugget", Item::new);
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(
@@ -27,9 +28,5 @@ public class ModItems {
 
     public static void register() {
         BuildANuke.LOGGER.info("Registered items for " + BuildANuke.MOD_ID);
-
-        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(output -> {
-            output.accept(URANIUM);
-        });
     }
 }

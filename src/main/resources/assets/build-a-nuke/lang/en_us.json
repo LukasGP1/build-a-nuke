@@ -1,3 +1,6 @@
 {
-  "item.build-a-nuke.uranium": "Uranium"
+  "item.build-a-nuke.uranium": "Uranium",
+  "item.build-a-nuke.uranium_nugget": "Uranium Nugget",
+
+  "creativemodetab.build-a-nuke.build_a_nuke_items": "Build a Nuke Items"
 }
