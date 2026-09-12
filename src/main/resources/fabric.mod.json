@@ -18,6 +18,9 @@
 		"main": [
 			"de.lulkas_.buildanuke.BuildANuke"
 		],
+		"client": [
+			"de.lulkas_.buildanuke.BuildANukeClient"
+		],
 		"fabric-datagen": [
 			"de.lulkas_.buildanuke.BuildANukeDataGenerator"
 		]

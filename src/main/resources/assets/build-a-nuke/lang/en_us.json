@@ -7,6 +7,7 @@
   "block.build-a-nuke.uranium_rich_granite": "Uranium Rich Granite",
   "block.build-a-nuke.uranium_rich_andesite": "Uranium Rich Andesite",
   "block.build-a-nuke.uranium_rich_diorite": "Uranium Rich Diorite",
+  "block.build-a-nuke.enricher": "Enricher",
 
   "creativemodetab.build-a-nuke.build_a_nuke_items": "Build a Nuke Items"
 }

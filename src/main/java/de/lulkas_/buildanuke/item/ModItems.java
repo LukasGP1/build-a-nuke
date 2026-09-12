@@ -1,6 +1,7 @@
 package de.lulkas_.buildanuke.item;
 
 import de.lulkas_.buildanuke.BuildANuke;
+import de.lulkas_.buildanuke.item.custom.EnrichableItem;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -12,7 +13,7 @@ import net.minecraft.world.item.Item;
 import java.util.function.Function;
 
 public class ModItems {
-    public static final Item URANIUM = registerItem("uranium", Item::new);
+    public static final Item URANIUM = registerItem("uranium", properties -> new EnrichableItem(properties, 0.007));
     public static final Item URANIUM_NUGGET = registerItem("uranium_nugget", Item::new);
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {

@@ -1,6 +1,7 @@
 package de.lulkas_.buildanuke.block;
 
 import de.lulkas_.buildanuke.BuildANuke;
+import de.lulkas_.buildanuke.block.custom.EnricherBlock;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -28,6 +29,11 @@ public class ModBlocks {
     public static final Block URANIUM_RICH_GRANITE = registerUraniumRichVariant(Blocks.GRANITE);
     public static final Block URANIUM_RICH_ANDESITE = registerUraniumRichVariant(Blocks.ANDESITE);
     public static final Block URANIUM_RICH_DIORITE = registerUraniumRichVariant(Blocks.DIORITE);
+    public static final Block ENRICHER = registerBlock("enricher",
+            List.of(BlockRegistrationFeature.CREATIVE_MODE_TAB, BlockRegistrationFeature.DROP_SELF),
+            BlockBehaviour.Properties.of().strength(3f),
+            EnricherBlock::new
+    );
 
     private static Block registerUraniumRichVariant(Block block) {
         Block registeredBlock = registerBlock(
